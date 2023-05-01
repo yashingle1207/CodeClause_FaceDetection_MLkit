@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.wonderkiln.camerakit.CamerView
+        android:id = "@+id/camera_view"
+        android: layout_width = "fill_parent"
+        android: layout_height = "fill_parent">
+        android: layout_above = "@+id/detect_face_btn">
+
+    </com.wonderkiln.camerakit.CamerView>
+
+    <com.example.facedetectionapp.Helper.GraphicOverlay
+        android:id = "@+id/graphic_overlay"
+        android:layout_width="fill_parent"
+        android:layout_above= "@+id/detect_face_btn"
+        android:layout_height="fill_parent">
+
+    </com.example.facedetectionapp.Helper.GraphicOverlay>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id = "@+id/detect_face_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_light_background"
+        android:textStyle="Detect Face">
+
+    </Button>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>
